@@ -1,0 +1,6 @@
+@mixin transition-duration($duration-time){
+  transition: all linear $duration-time;
+}
+@mixin transition-delay($delay-time){
+  transition-delay: $delay-time;
+}

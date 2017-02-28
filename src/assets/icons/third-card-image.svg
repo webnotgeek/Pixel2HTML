@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="47px" height="48px" viewBox="0 0 47 48" enable-background="new 0 0 47 48" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="47" height="48"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" width="47" height="48"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_4_)" fill="#E0E7ED" d="M0.85,3.738v10.957h45.317V3.738c0-1.657-1.343-3-3-3H3.85
+			C2.193,0.738,0.85,2.081,0.85,3.738"/>
+		<path clip-path="url(#SVGID_4_)" fill="#43484D" d="M43.151,46.307H3.848c-1.184,0-2.149-0.96-2.149-2.141V15.682H45.3v28.484
+			C45.3,45.347,44.337,46.307,43.151,46.307 M1.699,3.925c0-1.18,0.965-2.14,2.149-2.14h39.303c1.186,0,2.149,0.96,2.149,2.14V13.99
+			H1.699V3.925z M43.151,0H3.848C1.726,0,0,1.72,0,3.834v0.091v10.911v29.33C0,46.28,1.726,48,3.848,48h39.303
+			C45.273,48,47,46.28,47,44.166v-29.33V3.925V3.834C47,1.72,45.273,0,43.151,0"/>
+		<path clip-path="url(#SVGID_4_)" fill="#43484D" d="M17.753,26.321c-0.332-0.332-0.87-0.332-1.202,0l-4.665,4.665
+			c-0.332,0.332-0.332,0.87,0,1.202l4.665,4.665c0.166,0.166,0.383,0.249,0.601,0.249c0.218,0,0.435-0.083,0.601-0.249
+			c0.332-0.332,0.332-0.87,0-1.202l-4.064-4.064l4.064-4.064C18.085,27.191,18.085,26.653,17.753,26.321"/>
+		<path clip-path="url(#SVGID_4_)" fill="#43484D" d="M28.605,26.321c-0.332-0.332-0.87-0.332-1.202,0
+			c-0.332,0.332-0.332,0.87,0,1.202l4.064,4.064l-4.064,4.064c-0.332,0.332-0.332,0.87,0,1.202c0.166,0.166,0.383,0.249,0.601,0.249
+			c0.217,0,0.435-0.083,0.601-0.249l4.666-4.665c0.159-0.159,0.249-0.375,0.249-0.601c0-0.225-0.09-0.442-0.249-0.601L28.605,26.321
+			z"/>
+		<path clip-path="url(#SVGID_4_)" fill="#43484D" d="M24.958,23.373c-0.443-0.14-0.924,0.109-1.065,0.557l-4.241,13.551
+			c-0.14,0.449,0.109,0.925,0.557,1.065c0.084,0.027,0.17,0.039,0.254,0.039c0.362,0,0.697-0.233,0.811-0.596l4.241-13.551
+			C25.655,23.99,25.406,23.513,24.958,23.373"/>
+		<path clip-path="url(#SVGID_4_)" fill="#43484D" d="M10.293,7.717c0,1.057-0.857,1.914-1.914,1.914S6.466,8.774,6.466,7.717
+			c0-1.057,0.856-1.914,1.913-1.914S10.293,6.66,10.293,7.717"/>
+		<g opacity="0.3" clip-path="url(#SVGID_4_)" enable-background="new    ">
+			<g>
+				<defs>
+					<rect id="SVGID_5_" x="12.466" y="5.803" width="3.827" height="3.828"/>
+				</defs>
+				<clipPath id="SVGID_6_">
+					<use xlink:href="#SVGID_5_"  overflow="visible"/>
+				</clipPath>
+				<path clip-path="url(#SVGID_6_)" fill="#43484D" d="M16.293,7.717c0,1.057-0.857,1.914-1.914,1.914s-1.913-0.857-1.913-1.914
+					c0-1.057,0.856-1.914,1.913-1.914S16.293,6.66,16.293,7.717"/>
+			</g>
+		</g>
+		<g opacity="0.3" clip-path="url(#SVGID_4_)" enable-background="new    ">
+			<g>
+				<defs>
+					<rect id="SVGID_7_" x="18.466" y="5.803" width="3.827" height="3.828"/>
+				</defs>
+				<clipPath id="SVGID_8_">
+					<use xlink:href="#SVGID_7_"  overflow="visible"/>
+				</clipPath>
+				<path clip-path="url(#SVGID_8_)" fill="#43484D" d="M22.293,7.717c0,1.057-0.857,1.914-1.914,1.914
+					c-1.057,0-1.913-0.857-1.913-1.914c0-1.057,0.856-1.914,1.913-1.914C21.436,5.803,22.293,6.66,22.293,7.717"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
