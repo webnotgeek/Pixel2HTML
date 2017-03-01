@@ -19,6 +19,6 @@
     @media (min-width: 37.5em)  { @content ; }
   }
   @else if $point == mobile {
-    @media (max-width: 37.5em)  { @content ; }
+    @media (max-width: 50em)  { @content ; }
   }
 }
