@@ -1,0 +1,28 @@
+header.header {
+  .navbar--custom {
+    ul {
+      padding-left: 50px;
+      @include breakpoint(mobile){
+        padding-left: 0;
+      }
+      li {
+        list-style: none;
+        float: left;
+        margin-right: 40px;
+        @include breakpoint(mobile){
+          width: 100%;
+          text-align: center;
+          margin-right: 0;
+        }
+        a {
+          display: block;
+          color: rgba(134,147,158,0.8);
+          font-size: 15px;
+          padding-top: 0px;
+          padding-right: 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

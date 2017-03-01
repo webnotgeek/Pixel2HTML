@@ -49,12 +49,18 @@ h1, h2, h3, h4 {
       font-size: 52px;
       color: #43484d;
       margin: 0;
+      @include breakpoint(mobile){
+        font-size: 32px;
+      }
     }
     p {
       font-size: 22px;
       font-weight: 300;
       color: #8b99ab;
       padding-top: 20px;
+      @include breakpoint(mobile){
+        font-size: 18px;
+      }
     }
   }
 }
@@ -65,34 +71,49 @@ h1, h2, h3, h4 {
 //top banner
 .top-banner {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 195px;
+  @include breakpoint(mobile){
+    padding-top: 140px;
+  }
   h1 {
     font-weight: 300;
     font-size: 48px;
     color: #43484d;
     margin: 0;
+    @include breakpoint(mobile){
+      font-size: 32px!important;
+    }
   }
   p {
     font-size: 22px;
     font-weight: 300;
     color: #8b99ab;
     padding-top: 20px;
+    @include breakpoint(mobile){
+      font-size: 18px!important;
+    }
   }
   &__img {
     background: url("../../../assets/images/top-banner-img-bg.jpg");
     margin-top: 60px;
     height: 340px;
     border-radius: 12px;
+    overflow: hidden;
   }
 
   //cards
   .cards {
     padding-top: 65px;
     text-align: left;
+    @include breakpoint(mobile){
+      padding-top: 30px;
+    }
     //single card
     .card {
+      margin-bottom: 20px;
       &__img {
         text-align: center;
+
       }
       &__text {
         h3 {
@@ -105,6 +126,9 @@ h1, h2, h3, h4 {
           color: #86939e;
           font-weight: 300;
           padding-top: 10px;
+          @include breakpoint(mobile){
+            font-size: 14px!important;
+          }
         }
       }
     }
@@ -116,19 +140,28 @@ h1, h2, h3, h4 {
   margin-top: 200px;
   padding: 0;
   overflow-x: hidden;
+  @include breakpoint(mobile){
+    margin-top: 50px;
+  }
   //slider item
   &_item {
-    height: 430px;
     background-position: left top;
     background-repeat: no-repeat;
     background-size: contain;
+    padding-bottom: 155px;
     outline: none;
+    @include breakpoint(mobile){
+      padding-bottom: 60px;
+    }
     h2 {
       padding-top: 95px;
       color: $heading-grey-color;
       font-weight: 300;
       padding-bottom: 20px;
       opacity: 0;
+      @include breakpoint(mobile) {
+        margin-top: 150px;
+      }
     }
     p {
       color: #86939e;
@@ -166,6 +199,10 @@ h1, h2, h3, h4 {
   .slick-dots {
     bottom: 95px;
     left: 56px;
+    @include breakpoint(mobile){
+      bottom: 20px;
+      left: 0;
+    }
     li {
       padding: 0;
       margin: 0 6px 0 0;
@@ -198,6 +235,10 @@ h1, h2, h3, h4 {
   }
   .slick-next {
     right: 70px;
+    @include breakpoint(mobile){
+      top: 105px;
+      right: 25px;
+    }
     &:before {
       content: "\e258";
       font-family: Glyphicons Halflings;
@@ -216,11 +257,17 @@ h1, h2, h3, h4 {
   header {
     text-align: center;
     padding: 110px 0 90px 0;
+    @include breakpoint(mobile){
+      padding: 60px 0 30px 0;
+    }
   }
   &__block {
     border-radius: 7px;
     overflow: hidden;
     box-shadow: 2px 0px 2px rgba(0,0,0,0.2);
+    @include breakpoint(mobile){
+      box-shadow: none;
+    }
   }
   &__unit {
     background: #ffffff;
@@ -329,11 +376,17 @@ h1, h2, h3, h4 {
   padding-top: 250px;
   padding-bottom: 90px;
   margin-top: -130px;
+  @include breakpoint(mobile){
+    padding-top: 200px;
+  }
   header {
     text-align: center;
     h1 {
       color: rgba(255,255,255,1);
       font-size: 46px;
+      @include breakpoint(mobile){
+        font-size: 32px!important;
+      }
     }
     p {
       color: rgba(255,255,255,0.6);
@@ -376,6 +429,12 @@ h1, h2, h3, h4 {
         float: left;
         opacity: 0.2;
         @include transition-duration(0.3s);
+        @include breakpoint(mobile){
+          display: block;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+        }
         &:last-child {
           margin-right: 0;
         }

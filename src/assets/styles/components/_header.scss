@@ -1,29 +1,135 @@
 header.header {
   padding-top: 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background: #ffffff;
   .navbar--custom {
     background: #ffffff;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
     border-radius: 0;
     border: none;
     margin: 0;
-    ul {
-      padding-left: 50px;
-      li {
-        list-style: none;
-        float: left;
-        margin-right: 40px;
-        a {
-          display: block;
-          color: rgba(134,147,158,0.8);
-          font-size: 15px;
-          padding-top: 0px;
-          padding-right: 0;
-          font-weight: 500;
-        }
-      }
+    .container-fluid {
+      padding: 0;
     }
     .navbar-brand {
       padding: 0;
     }
   }
+  @include breakpoint(mobile) {
+    padding-top: 20px;
+    .navbar-default {
+      .navbar-toggle {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0 5px 0 0;
+      }
+    }
+    .navbar-header {
+      padding: 20px 30px;
+      .navbar-toggle {
+        @include breakpoint(mobile) {
+          margin-top: 5px;
+
+        }
+        .icon-bar {
+          @include transition-duration(0.3s);
+          &:nth-child(1) {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            -webkit-transform: rotate(45deg) translate3d(-6px, -4px, 0px);
+            -moz-transform: rotate(45deg) translate3d(-6px, -4px, 0px);
+            -ms-transform: rotate(45deg) translate3d(-6px, -4px, 0px);
+            -o-transform: rotate(45deg) translate3d(-6px, -4px, 0px);
+            transform: rotate(45deg) translate3d(-6px, -4px, 0px);
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            -webkit-transform: rotate(135deg) translate3d(-8px, 9px, 0px);
+            -moz-transform: rotate(135deg) translate3d(-8px, 9px, 0px);
+            -ms-transform: rotate(135deg) translate3d(-8px, 9px, 0px);
+            -o-transform: rotate(135deg) translate3d(-8px, 9px, 0px);
+            transform: rotate(135deg) translate3d(-8px, 9px, 0px);
+          }
+        }
+        &.collapsed {
+          .icon-bar {
+            &:nth-child(1) {
+              -webkit-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+              -o-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+            &:nth-child(2) {
+              -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
+              -moz-transform: rotate(0deg) translate3d(0, 0, 0);
+              -ms-transform: rotate(0deg) translate3d(0, 0, 0);
+              -o-transform: rotate(0deg) translate3d(0, 0, 0);
+              transform: rotate(0deg) translate3d(0, 0, 0);
+              opacity: 1;
+            }
+            &:nth-child(3) {
+              -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
+              -moz-transform: rotate(0deg) translate3d(0, 0, 0);
+              -ms-transform: rotate(0deg) translate3d(0, 0, 0);
+              -o-transform: rotate(0deg) translate3d(0, 0, 0);
+              transform: rotate(0deg) translate3d(0, 0, 0);
+            }
+          }
+        }
+      }
+
+    }
+    .navbar-collapse {
+      background: #545e6b;
+      .navbar-nav {
+        li {
+          padding: 0 0 30px 0;
+          &:first-child {
+            padding-top: 27px;
+          }
+          a {
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+            display: block;
+            position: relative;
+            opacity: 0;
+            @include transition-duration(0.5s);
+            &:after {
+              content: "";
+              width: 30px;
+              height: 1px;
+              position: absolute;
+              bottom: -10px;
+              left: calc(50% - 10px);
+              background: rgba(255, 255, 255, 0.7);
+
+            }
+          }
+        }
+      }
+      &.in {
+        @for $i from 1 through 4 {
+          li:nth-child(#{$i}) {
+            a {
+              opacity: 1;
+              @include transition-delay(#{$i/4}s)
+            }
+          }
+        }
+      }
+    }
+
+  }
+
 }

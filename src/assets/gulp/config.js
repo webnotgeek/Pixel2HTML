@@ -15,7 +15,6 @@ module.exports = {
   vendor: {
     scssDirectories: [
       'src/assets/vendor/bootstrap-sass/assets/stylesheets',
-      'src/assets/vendor/slick-carousel/slick/',
     ],
     scriptFiles: [
       'src/assets/vendor/jquery/dist/jquery.js',

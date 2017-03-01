@@ -30,7 +30,7 @@ $(".slider > div").slick({
 
     breakpoint: 600,
     settings: {
-      slidesToShow: 2,
+      slidesToShow: 1,
       dots: true
     }
 
