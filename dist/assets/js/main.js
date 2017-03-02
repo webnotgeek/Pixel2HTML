@@ -8,8 +8,15 @@ function printLog(log){
     'use strict';
   return console && console.log(log);
 }
+//header image parallax effect
+$(window).scroll(function () {
+  var scrollTop = $(this).scrollTop();
+  $('.top-banner__img img').css({
+    'transform' : 'translateY('+ scrollTop/3 +'px)'
+  });
+})
 
-printLog(msg);
+//slick slider call & options
 $(".slider > div").slick({
 
   // normal options...
@@ -19,7 +26,6 @@ $(".slider > div").slick({
 
   // the magic
   responsive: [{
-
     breakpoint: 1024,
     settings: {
       slidesToShow: 1,
@@ -35,12 +41,15 @@ $(".slider > div").slick({
     }
 
   }, {
-
     breakpoint: 300,
     settings: "unslick" // destroys slick
-
   }]
+
+
 });
+
+
+printLog(msg);
 
 
 

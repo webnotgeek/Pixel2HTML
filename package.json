@@ -6,7 +6,7 @@
   "version": "1.0.3",
   "scripts": {
 
-    "start": "npm install && bower install ",
+    "start": "npm install && bower install",
     "code": "gulp serve",
     "build": "gulp build"
   },
@@ -16,8 +16,8 @@
     "browser-sync": "2.6.5",
 
         "gulp-sass": "^3.1.0",
-            
-    
+
+
     "gulp-group-css-media-queries": "^1.2.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cssnano": "^2.1.2",

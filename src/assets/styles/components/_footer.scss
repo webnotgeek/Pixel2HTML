@@ -15,6 +15,9 @@
       line-height: normal;
       padding-top: 10px;
       line-height: 25px;
+      @include breakpoint(tablet) {
+        font-size: 13px;
+      }
     }
   }
   &__middle {
@@ -22,11 +25,16 @@
     ul {
       display: inline-block;
       padding-left: 0;
-      padding-right: 75px;
       list-style: none;
       @include breakpoint(mobile){
         margin-top: 30px;
         padding-right: 25px;
+      }
+      @include breakpoint(tablet){
+        padding-right: 30px;
+      }
+      @include breakpoint(laptop){
+        padding-right: 75px;
       }
       &:last-child {
         padding-right: 0;
@@ -46,6 +54,9 @@
           color: rgba(255,255,255,0.6);
           font-weight:300;
           font-size: 15px;
+          @include breakpoint(tablet){
+            font-size: 13px;
+          }
         }
       }
     }

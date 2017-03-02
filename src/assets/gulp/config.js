@@ -15,6 +15,7 @@ module.exports = {
   vendor: {
     scssDirectories: [
       'src/assets/vendor/bootstrap-sass/assets/stylesheets',
+      'src/assets/vendor/slick-carousel/slick/slick-theme.scss',
     ],
     scriptFiles: [
       'src/assets/vendor/jquery/dist/jquery.js',
@@ -24,6 +25,8 @@ module.exports = {
     fontFiles: [
       //'src/assets/vendor/bootstrap-sass/assets/fonts/bootstrap/**/*',
       'src/assets/fonts/**/*',
+      'src/assets/vendor/slick-carousel/slick/fonts/**/*',
+
     ]
   }
 }
