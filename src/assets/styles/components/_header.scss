@@ -91,9 +91,13 @@ header.header {
       }
 
     }
-    .navbar-collapse {
+    div.navbar-collapse {
+      @include breakpoint(ipad-mini){
+        display: none;
+      }
       background: #545e6b;
       height: 100%;
+
       .navbar-nav {
         li {
           padding: 0 0 30px 0;

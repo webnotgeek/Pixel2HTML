@@ -42,8 +42,11 @@ h1, h2, h3, h4 {
 }
 
 .container {
-  @include breakpoint(tablet){
+  @include breakpoint(tablet) {
     width: 95%;
+  }
+  @include breakpoint(laptop) {
+    width: 1170px;
   }
 }
 
@@ -52,7 +55,7 @@ h1, h2, h3, h4 {
     h1 {
       font-weight: 300;
       font-size: 52px;
-      color: #43484d;
+      color: $text-dark-grey;
       margin: 0;
       @include breakpoint(mobile){
         font-size: 32px;
@@ -71,22 +74,23 @@ h1, h2, h3, h4 {
 }
 
 //header
-
-
 //top banner
 .top-banner {
   text-align: center;
   padding-top: 195px;
   @include breakpoint(mobile){
     padding-top: 140px;
+    br {
+      display: none;
+    }
   }
   h1 {
     font-weight: 300;
     font-size: 48px;
-    color: #43484d;
+    color: $text-dark-grey;
     margin: 0;
     @include breakpoint(mobile){
-      font-size: 32px!important;
+      font-size: 32px;
     }
   }
   p {
@@ -95,7 +99,7 @@ h1, h2, h3, h4 {
     color: #8b99ab;
     padding-top: 20px;
     @include breakpoint(mobile){
-      font-size: 18px!important;
+      font-size: 18px;
     }
   }
   &__img {
@@ -122,17 +126,17 @@ h1, h2, h3, h4 {
       }
       &__text {
         h3 {
-          color: #43484d;
+          color: $text-dark-grey;
           font-size: 18px;
           font-weight: 400;
         }
         p {
           font-size: 15px;
-          color: #86939e;
+          color: $text-light-grey-color;
           font-weight: 300;
           padding-top: 10px;
           @include breakpoint(mobile){
-            font-size: 14px!important;
+            font-size: 14px;
           }
         }
       }
@@ -183,7 +187,7 @@ h1, h2, h3, h4 {
     }
     h2 {
       padding-top: 95px;
-      color: $heading-grey-color;
+      color: $text-dark-grey;
       font-weight: 300;
       padding-bottom: 20px;
       opacity: 0;
@@ -198,14 +202,14 @@ h1, h2, h3, h4 {
       }
     }
     p {
-      color: #86939e;
+      color: $text-light-grey-color;
       font-weight: 300;
       font-size: 16px;
       line-height: 25px;
       opacity: 0;
     }
     a {
-      color: #358ed7;
+      color: $blue-link-color;
       font-size: 16px;
       display: inline-block;
       margin-top: 25px;
@@ -263,8 +267,8 @@ h1, h2, h3, h4 {
       }
       &.slick-active {
         button {
-          background: #358ed7;
-          border-color: #358ed7;
+          background: $blue-link-color;
+          border-color: $blue-link-color;
         }
       }
     }
@@ -282,7 +286,7 @@ h1, h2, h3, h4 {
       content: "\e258";
       font-family: Glyphicons Halflings;
       font-style: normal;
-      color: #86939e;
+      color: $light-grey-color;
       font-size: 30px;
 
     }
@@ -322,18 +326,18 @@ h1, h2, h3, h4 {
     border-right: none;
     flex: 1;
     &:first-child {
-      border-right: 1px solid #f4f4f4;
+      border-right: 1px solid $light-grey-color;
     }
     h2 {
       font-size: 15px;
-      color: #86939e;
+      color: $text-light-grey-color;
       text-align: center;
       font-weight: 400;
       padding-bottom: 30px;
       margin-bottom: 30px;
-      border-bottom: 1px solid #f4f4f4;
+      border-bottom: 1px solid $light-grey-color;
       span {
-        color: #358ed7;
+        color: $blue-link-color;
         display: block;
         margin-bottom: 5px;
       }
@@ -342,10 +346,10 @@ h1, h2, h3, h4 {
       text-align: center;
       font-size: 52px;
       font-weight: 300;
-      color: #43484d;
+      color: $text-dark-grey;
       span {
         display: block;
-        color: #86939e;
+        color: $text-light-grey-color;
         font-size: 13px;
         margin-top: 5px;
         font-weight: 400;
@@ -354,7 +358,7 @@ h1, h2, h3, h4 {
     }
     p {
       text-align: center;
-      color: #86939e;
+      color: $text-light-grey-color;
       padding: 0 20px 30px 10px;
       font-size: 16px;
       font-weight: 300;
@@ -366,7 +370,7 @@ h1, h2, h3, h4 {
       list-style: none;
       padding-left: 0;
       padding-top: 30px;
-      border-top: 1px solid #f4f4f4;
+      border-top: 1px solid $light-grey-color;
        li {
          color: #5e6977;
          font-size: 14px;
@@ -445,7 +449,7 @@ h1, h2, h3, h4 {
       color: rgba(255,255,255,1);
       font-size: 46px;
       @include breakpoint(mobile){
-        font-size: 32px!important;
+        font-size: 32px;
       }
     }
     p {

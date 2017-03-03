@@ -212,16 +212,20 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Roboto'; }
 
-@media (min-width: 50em) {
+@media (min-width: 767px) {
   .container {
     width: 95%; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
 
 .container-fluid header h1 {
   font-weight: 300;
   font-size: 52px;
   color: #43484d;
   margin: 0; }
-  @media (max-width: 50em) {
+  @media (max-width: 767px) {
     .container-fluid header h1 {
       font-size: 32px; } }
 
@@ -230,32 +234,34 @@ h1, h2, h3, h4 {
   font-weight: 300;
   color: #8b99ab;
   padding-top: 20px; }
-  @media (max-width: 50em) {
+  @media (max-width: 767px) {
     .container-fluid header p {
       font-size: 18px; } }
 
 .top-banner {
   text-align: center;
   padding-top: 195px; }
-  @media (max-width: 50em) {
+  @media (max-width: 767px) {
     .top-banner {
-      padding-top: 140px; } }
+      padding-top: 140px; }
+      .top-banner br {
+        display: none; } }
   .top-banner h1 {
     font-weight: 300;
     font-size: 48px;
     color: #43484d;
     margin: 0; }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       .top-banner h1 {
-        font-size: 32px !important; } }
+        font-size: 32px; } }
   .top-banner p {
     font-size: 22px;
     font-weight: 300;
     color: #8b99ab;
     padding-top: 20px; }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       .top-banner p {
-        font-size: 18px !important; } }
+        font-size: 18px; } }
   .top-banner__img {
     background: url("../../../assets/images/top-banner-img-bg.jpg");
     margin-top: 60px;
@@ -265,7 +271,7 @@ h1, h2, h3, h4 {
   .top-banner .cards {
     padding-top: 65px;
     text-align: left; }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       .top-banner .cards {
         padding-top: 30px; } }
     .top-banner .cards .card {
@@ -278,31 +284,31 @@ h1, h2, h3, h4 {
         font-weight: 400; }
       .top-banner .cards .card__text p {
         font-size: 15px;
-        color: #86939e;
+        color: #929faa;
         font-weight: 300;
         padding-top: 10px; }
-        @media (max-width: 50em) {
+        @media (max-width: 767px) {
           .top-banner .cards .card__text p {
-            font-size: 14px !important; } }
+            font-size: 14px; } }
 
 .slider {
   margin-top: 200px;
   padding: 0;
   overflow-x: hidden; }
-  @media (max-width: 50em) {
+  @media (max-width: 767px) {
     .slider {
       margin-top: 50px; } }
-  @media (min-width: 50em) {
+  @media (min-width: 767px) {
     .slider {
       margin-top: 50px; } }
   .slider_item {
     padding-bottom: 155px;
     outline: none;
     position: relative; }
-    @media (min-width: 64em) {
+    @media (min-width: 1200px) {
       .slider_item {
         padding-top: 50px; } }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       .slider_item {
         padding-bottom: 80px; } }
     .slider_item img {
@@ -312,14 +318,14 @@ h1, h2, h3, h4 {
       left: 0;
       top: 0;
       opacity: 0; }
-      @media (min-width: 37.5em) {
+      @media (min-width: 761px) {
         .slider_item img {
           height: 90%; } }
-      @media (max-width: 50em) {
+      @media (max-width: 767px) {
         .slider_item img {
           padding-bottom: 60px;
           height: 50%; } }
-      @media (min-width: 64em) {
+      @media (min-width: 1200px) {
         .slider_item img {
           margin-top: 50px; } }
     .slider_item h2 {
@@ -328,17 +334,17 @@ h1, h2, h3, h4 {
       font-weight: 300;
       padding-bottom: 20px;
       opacity: 0; }
-      @media (max-width: 50em) {
+      @media (max-width: 767px) {
         .slider_item h2 {
           margin-top: 100px; } }
-      @media (min-width: 50em) {
+      @media (min-width: 767px) {
         .slider_item h2 {
           padding-top: 0; } }
-      @media (min-width: 64em) {
+      @media (min-width: 1200px) {
         .slider_item h2 {
           margin-top: 95px; } }
     .slider_item p {
-      color: #86939e;
+      color: #929faa;
       font-weight: 300;
       font-size: 16px;
       line-height: 25px;
@@ -368,7 +374,7 @@ h1, h2, h3, h4 {
   .slider .slick-dots {
     bottom: 95px;
     left: 56px; }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       .slider .slick-dots {
         bottom: 20px;
         left: 0; } }
@@ -396,7 +402,7 @@ h1, h2, h3, h4 {
     margin-bottom: 0; }
   .slider .slick-next {
     right: 70px; }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       .slider .slick-next {
         top: 105px;
         right: 25px; } }
@@ -404,7 +410,7 @@ h1, h2, h3, h4 {
       content: "\e258";
       font-family: Glyphicons Halflings;
       font-style: normal;
-      color: #86939e;
+      color: #f4f4f4;
       font-size: 30px; }
 
 .pricing {
@@ -413,7 +419,7 @@ h1, h2, h3, h4 {
   .pricing header {
     text-align: center;
     padding: 110px 0 90px 0; }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       .pricing header {
         padding: 60px 0 30px 0; } }
   .pricing__block {
@@ -427,7 +433,7 @@ h1, h2, h3, h4 {
     display: -ms-flexbox;
     display: flex;
     overflow: hidden; }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       .pricing__block {
         display: block; } }
   .pricing__unit {
@@ -441,7 +447,7 @@ h1, h2, h3, h4 {
       border-right: 1px solid #f4f4f4; }
     .pricing__unit h2 {
       font-size: 15px;
-      color: #86939e;
+      color: #929faa;
       text-align: center;
       font-weight: 400;
       padding-bottom: 30px;
@@ -458,18 +464,18 @@ h1, h2, h3, h4 {
       color: #43484d; }
       .pricing__unit h3 span {
         display: block;
-        color: #86939e;
+        color: #929faa;
         font-size: 13px;
         margin-top: 5px;
         font-weight: 400;
         margin-bottom: 30px; }
     .pricing__unit p {
       text-align: center;
-      color: #86939e;
+      color: #929faa;
       padding: 0 20px 30px 10px;
       font-size: 16px;
       font-weight: 300; }
-      @media (min-width: 50em) {
+      @media (min-width: 767px) {
         .pricing__unit p {
           font-size: 14px; } }
     .pricing__unit ul {
@@ -525,10 +531,10 @@ h1, h2, h3, h4 {
   padding-top: 250px;
   padding-bottom: 90px;
   margin-top: -130px; }
-  @media (max-width: 50em) {
+  @media (max-width: 767px) {
     .dark-grey {
       padding-top: 200px; } }
-  @media (min-width: 50em) {
+  @media (min-width: 767px) {
     .dark-grey {
       padding-bottom: 45px; } }
   .dark-grey header {
@@ -536,9 +542,9 @@ h1, h2, h3, h4 {
     .dark-grey header h1 {
       color: white;
       font-size: 46px; }
-      @media (max-width: 50em) {
+      @media (max-width: 767px) {
         .dark-grey header h1 {
-          font-size: 32px !important; } }
+          font-size: 32px; } }
     .dark-grey header p {
       color: rgba(255, 255, 255, 0.6);
       font-weight: 300;
@@ -575,21 +581,21 @@ h1, h2, h3, h4 {
         float: left;
         opacity: 0.2;
         transition: all linear 0.3s; }
-        @media (min-width: 64em) {
+        @media (min-width: 1200px) {
           .dark-grey .trustees__logos li {
             width: auto;
             margin-right: 35px; } }
-        @media (min-width: 50em) {
+        @media (min-width: 767px) {
           .dark-grey .trustees__logos li {
             width: auto;
             margin-right: 15px; } }
-        @media (max-width: 50em) {
+        @media (max-width: 767px) {
           .dark-grey .trustees__logos li {
             display: block;
             width: 100%;
             text-align: center;
             margin-bottom: 20px; } }
-        @media (min-width: 37.5em) {
+        @media (min-width: 761px) {
           .dark-grey .trustees__logos li {
             display: block;
             width: 100%;
@@ -625,7 +631,7 @@ header.header {
     header.header .navbar--custom .navbar-brand {
       padding: 0;
       height: 50px; }
-  @media (max-width: 50em) {
+  @media (max-width: 767px) {
     header.header {
       padding-top: 20px; }
       header.header .navbar-default .navbar-toggle {
@@ -635,10 +641,10 @@ header.header {
         margin: 0 5px 0 0; }
       header.header .navbar-header {
         padding: 0px 30px; } }
-    @media (max-width: 50em) and (max-width: 50em) {
+    @media (max-width: 767px) and (max-width: 767px) {
       header.header .navbar-header .navbar-toggle {
         margin-top: 5px; } }
-  @media (max-width: 50em) {
+  @media (max-width: 767px) {
         header.header .navbar-header .navbar-toggle .icon-bar {
           transition: all linear 0.3s; }
           header.header .navbar-header .navbar-toggle .icon-bar:nth-child(1) {
@@ -661,21 +667,21 @@ header.header {
         header.header .navbar-header .navbar-toggle.collapsed .icon-bar:nth-child(3) {
           -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
           transform: rotate(0deg) translate3d(0, 0, 0); }
-      header.header .navbar-collapse {
+      header.header div.navbar-collapse {
         background: #545e6b;
         height: 100%; }
-        header.header .navbar-collapse .navbar-nav li {
+        header.header div.navbar-collapse .navbar-nav li {
           padding: 0 0 30px 0; }
-          header.header .navbar-collapse .navbar-nav li:first-child {
+          header.header div.navbar-collapse .navbar-nav li:first-child {
             padding-top: 27px; }
-          header.header .navbar-collapse .navbar-nav li a {
+          header.header div.navbar-collapse .navbar-nav li a {
             color: rgba(255, 255, 255, 0.7);
             font-weight: 400;
             display: block;
             position: relative;
             opacity: 0;
             transition: all linear 0.5s; }
-            header.header .navbar-collapse .navbar-nav li a:after {
+            header.header div.navbar-collapse .navbar-nav li a:after {
               content: "";
               width: 30px;
               height: 1px;
@@ -683,16 +689,16 @@ header.header {
               bottom: -10px;
               left: calc(50% - 10px);
               background: rgba(255, 255, 255, 0.7); }
-        header.header .navbar-collapse.in li:nth-child(1) a {
+        header.header div.navbar-collapse.in li:nth-child(1) a {
           opacity: 1;
           transition-delay: 0.25s; }
-        header.header .navbar-collapse.in li:nth-child(2) a {
+        header.header div.navbar-collapse.in li:nth-child(2) a {
           opacity: 1;
           transition-delay: 0.5s; }
-        header.header .navbar-collapse.in li:nth-child(3) a {
+        header.header div.navbar-collapse.in li:nth-child(3) a {
           opacity: 1;
           transition-delay: 0.75s; }
-        header.header .navbar-collapse.in li:nth-child(4) a {
+        header.header div.navbar-collapse.in li:nth-child(4) a {
           opacity: 1;
           transition-delay: 1s; } }
 
@@ -712,7 +718,7 @@ header.header {
       line-height: normal;
       padding-top: 10px;
       line-height: 25px; }
-      @media (min-width: 50em) {
+      @media (min-width: 767px) {
         .footer__left span {
           font-size: 13px; } }
   .footer__middle {
@@ -721,14 +727,14 @@ header.header {
       display: inline-block;
       padding-left: 0;
       list-style: none; }
-      @media (max-width: 50em) {
+      @media (max-width: 767px) {
         .footer__middle ul {
           margin-top: 30px;
           padding-right: 25px; } }
-      @media (min-width: 50em) {
+      @media (min-width: 767px) {
         .footer__middle ul {
           padding-right: 30px; } }
-      @media (min-width: 64em) {
+      @media (min-width: 1200px) {
         .footer__middle ul {
           padding-right: 75px; } }
       .footer__middle ul:last-child {
@@ -736,7 +742,7 @@ header.header {
       .footer__middle ul li {
         text-align: left;
         padding-bottom: 15px; }
-        @media (max-width: 50em) {
+        @media (max-width: 767px) {
           .footer__middle ul li {
             text-align: center; } }
         .footer__middle ul li:first-child {
@@ -747,7 +753,7 @@ header.header {
           color: rgba(255, 255, 255, 0.6);
           font-weight: 300;
           font-size: 15px; }
-          @media (min-width: 50em) {
+          @media (min-width: 767px) {
             .footer__middle ul li a {
               font-size: 13px; } }
   .footer__right {
@@ -790,14 +796,14 @@ header.header {
 
 header.header .navbar--custom ul {
   padding-left: 50px; }
-  @media (max-width: 50em) {
+  @media (max-width: 767px) {
     header.header .navbar--custom ul {
       padding-left: 0; } }
   header.header .navbar--custom ul li {
     list-style: none;
     float: left;
     margin-right: 40px; }
-    @media (max-width: 50em) {
+    @media (max-width: 767px) {
       header.header .navbar--custom ul li {
         width: 100%;
         text-align: center;
