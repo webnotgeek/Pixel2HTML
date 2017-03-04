@@ -11,4 +11,6 @@ Used Pixel2HTML boilerplate
 * used PX2HT Generator (loved it!).
 * SASS is used "mixins" used for animation and making breakpoints mixins for media queries.
 
+### Run
+* dist/index.html run it and everything will be just working fine ;)
 
