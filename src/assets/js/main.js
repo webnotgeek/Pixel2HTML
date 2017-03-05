@@ -17,7 +17,7 @@ $(window).scroll(function () {
 })
 
 //slick slider call & options
-$(".slider > div").slick({
+$(".slider .slider_container").slick({
 
   // normal options...
   infinite: false,
