@@ -355,6 +355,9 @@ h1, h2, h3, h4 {
       display: inline-block;
       margin-top: 25px;
       opacity: 0; }
+      .slider_item a i {
+        font-size: 11px;
+        padding-left: 5px; }
     .slider_item.slick-active img {
       opacity: 1;
       transition: all linear 1s;
